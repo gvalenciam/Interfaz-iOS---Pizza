@@ -15,6 +15,9 @@
 		0E41FC3C1C1BD923000CF8E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E41FC3A1C1BD923000CF8E0 /* LaunchScreen.storyboard */; };
 		0E41FC471C1BD923000CF8E0 /* Prepara_tu_PizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41FC461C1BD923000CF8E0 /* Prepara_tu_PizzaTests.swift */; };
 		0E41FC521C1BD923000CF8E0 /* Prepara_tu_PizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41FC511C1BD923000CF8E0 /* Prepara_tu_PizzaUITests.swift */; };
+		0E47B2B51C1CC40C00849512 /* VistaQuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47B2B41C1CC40C00849512 /* VistaQuesoViewController.swift */; };
+		0E47B2B71C1CE46900849512 /* VistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47B2B61C1CE46900849512 /* VistaIngredientes.swift */; };
+		0E47B2B91C1CE91C00849512 /* VistaFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47B2B81C1CE91C00849512 /* VistaFinal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		0E41FC4D1C1BD923000CF8E0 /* Prepara tu PizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prepara tu PizzaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E41FC511C1BD923000CF8E0 /* Prepara_tu_PizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prepara_tu_PizzaUITests.swift; sourceTree = "<group>"; };
 		0E41FC531C1BD923000CF8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E47B2B41C1CC40C00849512 /* VistaQuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQuesoViewController.swift; sourceTree = "<group>"; };
+		0E47B2B61C1CE46900849512 /* VistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngredientes.swift; sourceTree = "<group>"; };
+		0E47B2B81C1CE91C00849512 /* VistaFinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaFinal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				0E41FC381C1BD923000CF8E0 /* Assets.xcassets */,
 				0E41FC3A1C1BD923000CF8E0 /* LaunchScreen.storyboard */,
 				0E41FC3D1C1BD923000CF8E0 /* Info.plist */,
+				0E47B2B41C1CC40C00849512 /* VistaQuesoViewController.swift */,
+				0E47B2B61C1CE46900849512 /* VistaIngredientes.swift */,
+				0E47B2B81C1CE91C00849512 /* VistaFinal.swift */,
 			);
 			path = "Prepara tu Pizza";
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E47B2B91C1CE91C00849512 /* VistaFinal.swift in Sources */,
+				0E47B2B51C1CC40C00849512 /* VistaQuesoViewController.swift in Sources */,
 				0E41FC341C1BD922000CF8E0 /* SecondViewController.swift in Sources */,
+				0E47B2B71C1CE46900849512 /* VistaIngredientes.swift in Sources */,
 				0E41FC301C1BD922000CF8E0 /* AppDelegate.swift in Sources */,
 				0E41FC321C1BD922000CF8E0 /* FirstViewController.swift in Sources */,
 			);
@@ -488,6 +500,7 @@
 				0E41FC581C1BD923000CF8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E41FC591C1BD923000CF8E0 /* Build configuration list for PBXNativeTarget "Prepara tu PizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				0E41FC5B1C1BD923000CF8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E41FC5C1C1BD923000CF8E0 /* Build configuration list for PBXNativeTarget "Prepara tu PizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				0E41FC5E1C1BD923000CF8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
