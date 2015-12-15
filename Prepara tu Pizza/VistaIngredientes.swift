@@ -134,8 +134,14 @@ class VistaIngredientes: UIViewController {
         let labelqueso = cadenatres
         let vistaFINAL = segue.destinationViewController as! VistaFinal
         let ingredientes = estadocuatro
-        let labelingredientes : String = a + b + c + d + e + f
-
+        var labelingredientes : String = a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f
+        
+        labelingredientes = labelingredientes.stringByReplacingOccurrencesOfString(" ", withString:"")
+        labelingredientes = labelingredientes.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        
+        let cadenaextra1 = cadenaextrauno
+        let cadenaextra2 = cadenaextrados
+        
         if tamaño == 0 || masa == 0 || queso == 0 || ingredientes == 0 {
             
             let alertController = UIAlertController(title: "La Pizza no está lista!!! ", message:
@@ -146,7 +152,22 @@ class VistaIngredientes: UIViewController {
             
         } else {
             
-            vistaFINAL.cadenafinal = "\(tamaño)\t" + labeltamaño + "\n" + "\(masa)\t" + labelmasa + "\n" + "\(queso)\t" + labelqueso + "\n" + "\(ingredientes)\t" + labelingredientes + "\n"
+            if cadenaextra1 != "" && cadenaextra2 == "" {
+                
+                vistaFINAL.cadenafinal = "Tamaño:\n\n" + labeltamaño + "\n\n" + "Masa:\n\n" + labelmasa + "\n\n" + "Queso:\n\n" + labelqueso + "\n\n" + "Ingredientes:\n\n" + labelingredientes + "\n\n" +  "Preferencia Extra" + "\n\n" +   cadenaextra1
+                
+            } else if cadenaextra1 == "" && cadenaextra2 != "" {
+           
+                vistaFINAL.cadenafinal = "Tamaño:\n\n" + labeltamaño + "\n\n" + "Masa:\n\n" + labelmasa + "\n\n" + "Queso:\n\n" + labelqueso + "\n\n" + "Ingredientes:\n\n" + labelingredientes + "\n\n" + "Dirección Delivery" + "\n\n" +   cadenaextra2
+            } else if cadenaextra1 != "" && cadenaextra2 != ""{
+                
+                vistaFINAL.cadenafinal = "Tamaño:\n\n" + labeltamaño + "\n\n" + "Masa:\n\n" + labelmasa + "\n\n" + "Queso:\n\n" + labelqueso + "\n\n" + "Ingredientes:\n\n" + labelingredientes + "\n\n" + "Preferencia Extra" + "\n\n" +   cadenaextra1 + "\n\n" +  "Dirección Delivery" + "\n\n" +   cadenaextra2
+                
+            } else {
+                
+                vistaFINAL.cadenafinal = "Tamaño:\n\n" + labeltamaño + "\n\n" + "Masa:\n\n" + labelmasa + "\n\n" + "Queso:\n\n" + labelqueso + "\n\n" + "Ingredientes:\n\n" + labelingredientes
+                
+            }
             
         }
 

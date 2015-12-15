@@ -1,36 +1,19 @@
 //
-//  VistaFinal.swift
+//  Extra1.swift
 //  Prepara tu Pizza
 //
-//  Created by Gerardo Valencia on 12/12/15.
+//  Created by Gerardo Valencia on 12/14/15.
 //  Copyright © 2015 Gerardo Valencia. All rights reserved.
 //
 
 import UIKit
 
-var bandera = 0
+var cadenaextrauno = ""
 
-class VistaFinal: UIViewController {
+class Extra1: UIViewController {
 
-    var cadenafinal = ""
+    @IBOutlet weak var LabelExtra1: UITextView!
     
-    @IBOutlet weak var botonconfirmar: UIButton!
-    
-    @IBAction func Confirmacion(sender: AnyObject) {
-        
-        bandera = 1
-        
-        
-        
-    }
-    @IBOutlet weak var LabelFinal: UITextView!
-    
-   
-    
-    override func viewWillAppear(animated: Bool) {
-        
-        LabelFinal.text = cadenafinal
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +25,10 @@ class VistaFinal: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillDisappear(animated: Bool) {
+        
+        cadenaextrauno = LabelExtra1.text
+    }
     /*
     // MARK: - Navigation
 

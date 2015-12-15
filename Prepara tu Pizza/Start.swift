@@ -1,38 +1,33 @@
 //
-//  VistaFinal.swift
+//  Start.swift
 //  Prepara tu Pizza
 //
-//  Created by Gerardo Valencia on 12/12/15.
+//  Created by Gerardo Valencia on 12/14/15.
 //  Copyright © 2015 Gerardo Valencia. All rights reserved.
 //
 
 import UIKit
 
-var bandera = 0
 
-class VistaFinal: UIViewController {
 
-    var cadenafinal = ""
+class Start: UIViewController {
+
+    @IBOutlet weak var MensajeConfirmación: UILabel!
     
-    @IBOutlet weak var botonconfirmar: UIButton!
-    
-    @IBAction func Confirmacion(sender: AnyObject) {
-        
-        bandera = 1
-        
-        
-        
-    }
-    @IBOutlet weak var LabelFinal: UITextView!
-    
-   
-    
-    override func viewWillAppear(animated: Bool) {
-        
-        LabelFinal.text = cadenafinal
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
+        
+        
+        
+        if bandera == 1 {
+            
+            MensajeConfirmación.text =
+            "Pedido Completado Gracias!!!"
+        } else {
+            MensajeConfirmación.text = ""
+        }
 
         // Do any additional setup after loading the view.
     }
