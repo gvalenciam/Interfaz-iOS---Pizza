@@ -77,6 +77,12 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         
+        a = ""
+        b = ""
+        c = ""
+        d = ""
+        e = ""
+        f = ""
         
         // Do any additional setup after loading the view, typically from a nib.
     }
